@@ -1,0 +1,15 @@
+ll BanyakFaktor(ll n){
+	ll idx_bil = 0;
+	ll ans = 1;
+	while (primes[idx_bil] * primes[idx_bil] <= n) {
+		ll power = 0;
+		while (n%primes[idx_bil] == 0) {
+			n/=primes[idx_bil];
+			power++;
+		}
+		ans *= (power + 1);
+		idx_bil++;
+	}
+	if (n != 1) ans *= 2;
+	return ans;
+}

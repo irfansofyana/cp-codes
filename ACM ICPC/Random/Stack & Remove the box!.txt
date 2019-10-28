@@ -1,0 +1,62 @@
+#Stack & Remove the box!
+
+Time limit : 3S
+Memory limit : 256 MB
+Input	: stdin
+Output : stdout
+
+Description
+
+Wengki and his best friend, Bim, are playing with some boxes. They will stacking and removing some boxes. These boxes are numbered from 1 to m. Initially there are no boxes on the stack.
+
+Bim suddently went crazy, he gives Wengki 2m commands: m of which are to add a box to the top of stack and another m commands to remove a box from the top of stack and throw it to trash. Bim is a perfectionist boy, so he wants Wengki to throw the boxes in the order from 1 to m. Of course, sometimes it might me impossible for Wengki to perform some of Bim's remove commands because the required box is not on the top of stack.
+
+Wengki is a smart boy. When Bim looks away, he can reorder the boxes in the stack in any ways he wants. He can do it at any time between Bim's commands, but of course he can't add or remove the boxes while he reorder the stack.
+
+Wengki knows that you are the best programmer in ITB. Please help Wengki to tell the minimum number of times he needs to reorder the stack so that he can successfully complete all of Bim's commands. 
+
+It is guaranteed that every box is added before it is required to be removed.
+
+Input Format
+
+The first line of input is the integer m denotes the number of boxes
+
+Each of the next 2m lines of input starts with string "add" or "remove". If the lines start with "add", an integer x follows indicating that wengki needs to add the box with number x to the stack. If the lines start with "remove", wengki needs to remove the box on the top of stack.
+
+
+Output
+
+Output the minimum number of times Wengki needs to reorder the stack so that he can succesfully complete all of Bim's commands.
+
+Constraint
+1 <= m <= 3.10^5
+1 <= x <= m
+It's guaranteed that exactly m lines contains add operations and m lines contains remove operations.
+It is guaranteed that every box is added before it is required to be removed.
+
+Sample input 1
+3
+add 1
+remove
+add 2
+add 3
+remove
+remove
+
+Sample output 1
+1
+
+
+Sample input 2
+4
+add 1
+add 3
+remove
+add 4
+add 2
+remove
+remove
+remove
+
+Sample output 2
+2

@@ -1,0 +1,10 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+string s;
+
+int main(){
+	getline(cin,s);
+	cout << "Hello, World.\n" << s << '\n';
+	return 0;
+}
