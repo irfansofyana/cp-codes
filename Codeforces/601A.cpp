@@ -30,8 +30,6 @@ int dijkstra(int t, int start){
         }
     }
     return (dist[n] == INF ? -1 : dist[n]);
-}
-
 int main(){
     ios_base::sync_with_stdio(0); cin.tie(0);
     cin >> n >> m;
